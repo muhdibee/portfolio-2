@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 5rem;
+  margin: 1rem 0rem;
+  position: sticky;
+  /* margin-bottom: 2rem; */
+  top: 0px;
+  width: 100%;
+  border: 1px ridge;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 2rem;
+}
