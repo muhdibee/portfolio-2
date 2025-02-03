@@ -1,10 +1,10 @@
 .container {
-  position: fixed;
+  position: relative;
   bottom: 0px;
   border: 1px ridge;
 }
 .main {
-  padding: 2px 5rem;
+  padding: 2px 10.25rem;
   padding-bottom: 5rem;
 }
 .hr {
@@ -13,6 +13,6 @@
   font-weight: bold;
 }
 .nav {
-  padding: 2px 5rem;
+  padding: 2px 10.25rem;
   background-color: aquamarine;
 }
