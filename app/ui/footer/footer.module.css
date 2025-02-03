@@ -1,9 +1,18 @@
 .container {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 4rem;
   position: fixed;
   bottom: 0px;
-  width: 100%;
-  border: 2px ridge;
+  border: 1px ridge;
+}
+.main {
+  padding: 2px 5rem;
+  padding-bottom: 5rem;
+}
+.hr {
+  width: 50%;
+  max-width: 80%;
+  font-weight: bold;
+}
+.nav {
+  padding: 2px 5rem;
+  background-color: aquamarine;
 }
