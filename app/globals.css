@@ -77,6 +77,10 @@ p {
   color: var(--slightlyDesaturatedCyan);
 }
 
+.activeLink {
+  color: var(--slightlyDesaturatedCyan);
+}
+
 .logo {
   height: 30px;
   width: 60.08px;

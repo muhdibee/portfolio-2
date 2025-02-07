@@ -1,14 +1,18 @@
+"use client";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 import styles from "@/app/ui/footer/footer.module.css";
 import logo from "../../../public/logo2.png";
-import Image from "next/image";
-import Link from "next/link";
 import Button from "../buttons/button";
 
 export default function Footer() {
+  const pathname = usePathname();
+
   return (
     <footer
       className={`${styles.container} flex flex-col justify-between w-full`}>
@@ -31,17 +35,32 @@ export default function Footer() {
           <ul className="links">
             <li>
               <Link href={"/"}>
-                <p className={`navLink`}>HOME</p>
+                <p
+                  className={clsx(` navLink`, {
+                    ["activeLink"]: "/" === pathname,
+                  })}>
+                  HOME
+                </p>
               </Link>
             </li>
             <li>
               <Link href={"/portfolio"}>
-                <p className={`navLink`}>PORTFOLIO</p>
+                <p
+                  className={clsx(` navLink`, {
+                    ["activeLink"]: "/portfolio" === pathname,
+                  })}>
+                  PORTFOLIO
+                </p>
               </Link>
             </li>
             <li>
               <Link href={"/contact-me"}>
-                <p className={`navLink`}>CONTACT ME</p>
+                <p
+                  className={clsx(` navLink`, {
+                    ["activeLink"]: "/contact-me" === pathname,
+                  })}>
+                  CONTACT ME
+                </p>
               </Link>
             </li>
           </ul>
