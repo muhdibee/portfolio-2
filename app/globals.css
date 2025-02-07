@@ -13,6 +13,8 @@
   --lightGrey: #eaeaeb;
   --brightRed: #f43030;
   --white: #ffffff;
+  --linkedInBlue: #0077b5;
+  --black: #000000;
 }
 
 /* @media (prefers-color-scheme: light) {
@@ -58,9 +60,16 @@ p {
   line-height: 30px;
 }
 
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
 .navLink {
   font-family: "Public Sans", sans-serif;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 30px;
 }

@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className={`${styles.aboutDetails} pt-4`}>
           <h3 className={`my-8`}>About Me</h3>
-          <p className={`${styles.aboutText} mb-4`}> {aboutMeDetail}</p>
+          <p className={`${styles.aboutText} mb-8`}> {aboutMeDetail}</p>
           <Button text="GO TO PORTFOLIO" link={"/portfolio"} />
         </div>
       </section>

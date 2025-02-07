@@ -1,14 +1,18 @@
-import styles from "@/app/ui/footer/footer.module.css";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
+import styles from "@/app/ui/footer/footer.module.css";
 import logo from "../../../public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "../buttons/button";
 
 export default function Footer() {
   return (
-    <div
+    <footer
       className={`${styles.container} flex flex-col justify-between w-full `}>
-      <div
+      <section
         className={`${styles.main} flex flex-row justify-between items-center pt-4`}>
         <h2>
           Interested in doing <br /> a project together?
@@ -16,28 +20,53 @@ export default function Footer() {
         <div className={`${styles.hr} font-bold`}>
           <hr />
         </div>
-        <button className="border-2 border-solid">CONTACT ME</button>
-      </div>
-      <div
+        <Button text="CONTACT ME" link={"/contact-me"} />
+      </section>
+      <section
         className={`${styles.nav} flex flex-row justify-between items-center pt-3 pb-3`}>
         <div className="flex flex-row justify-between gap-6">
           <div>
             <Image src={logo} alt="logo" />
           </div>
-          <ul className={`${styles.links} flex flex-row justify-between gap-6`}>
+          <ul className="links">
             <li>
-              <Link href={"/"}>HOME</Link>
+              <Link href={"/"}>
+                <p className={`navLink`}>HOME</p>
+              </Link>
             </li>
             <li>
-              <Link href={"/portfolio"}>PORTFOLIO</Link>
+              <Link href={"/portfolio"}>
+                <p className={`navLink`}>PORTFOLIO</p>
+              </Link>
             </li>
             <li>
-              <Link href={"/contact-me"}>CONTACT ME</Link>
+              <Link href={"/contact-me"}>
+                <p className={`navLink`}>CONTACT ME</p>
+              </Link>
             </li>
           </ul>
         </div>
-        <div>Socials</div>
-      </div>
-    </div>
+        <div className={`${styles.socials} flex flex-row gap-6`}>
+          <Link
+            href={"https://github.com/muhdibee"}
+            target="_blank"
+            title="github/@muhdibee">
+            <FaGithub className={`${styles.github}`} />
+          </Link>
+          <Link
+            href={"https://x.com/muhdibee"}
+            target="_blank"
+            title="X/@muhdibee">
+            <FaXTwitter className={`${styles.x}`} />
+          </Link>
+          <Link
+            href={"https://www.linkedin.com/in/muhdibee/"}
+            target="_blank"
+            title="LinkedIn/@muhdibee">
+            <FaLinkedin className={`${styles.linkedIn}`} />
+          </Link>
+        </div>
+      </section>
+    </footer>
   );
 }

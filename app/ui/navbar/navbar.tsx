@@ -10,7 +10,7 @@ export default function Navbar() {
         {" "}
         <Image src={logo} alt="logo" className={`${styles.logo} logo`} />
       </div>
-      <ul className={styles.links}>
+      <ul className="links">
         <li>
           <Link href={"/"}>
             <p className={`navLink`}>HOME</p>

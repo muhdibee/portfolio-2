@@ -27,7 +27,7 @@ const ibarra_real_nova = Ibarra_Real_Nova({
 });
 
 const public_sans = Public_Sans({
-  weight: "400",
+  weight: "300",
   subsets: ["latin"],
   display: "swap",
 });
