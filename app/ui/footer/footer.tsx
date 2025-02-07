@@ -3,7 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
 import styles from "@/app/ui/footer/footer.module.css";
-import logo from "../../../public/logo.png";
+import logo from "../../../public/logo2.png";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../buttons/button";
@@ -11,12 +11,12 @@ import Button from "../buttons/button";
 export default function Footer() {
   return (
     <footer
-      className={`${styles.container} flex flex-col justify-between w-full `}>
+      className={`${styles.container} flex flex-col justify-between w-full`}>
       <section
-        className={`${styles.main} flex flex-row justify-between items-center pt-4`}>
-        <h2>
+        className={`${styles.main} flex flex-row justify-between items-center`}>
+        <h3>
           Interested in doing <br /> a project together?
-        </h2>
+        </h3>
         <div className={`${styles.hr} font-bold`}>
           <hr />
         </div>
@@ -25,7 +25,7 @@ export default function Footer() {
       <section
         className={`${styles.nav} flex flex-row justify-between items-center pt-3 pb-3`}>
         <div className="flex flex-row justify-between gap-6">
-          <div>
+          <div className="mr-12">
             <Image src={logo} alt="logo" />
           </div>
           <ul className="links">

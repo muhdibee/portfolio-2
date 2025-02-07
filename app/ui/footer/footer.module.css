@@ -1,15 +1,14 @@
 .container {
   position: relative;
   bottom: 0px;
-  border: 1px ridge;
+  border: 1px red;
 }
 .main {
   padding: 2px 10.25rem;
   padding-bottom: 5rem;
 }
 .hr {
-  width: 50%;
-  max-width: 80%;
+  width: 40%;
   font-weight: bold;
 }
 .nav {
