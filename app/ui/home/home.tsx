@@ -2,6 +2,7 @@ import Image from "next/image";
 import { aboutMeDetail, heroSummary } from "@/app/util";
 import myPhoto from "../../../public/images/me2.jpg";
 import styles from "./home.module.css";
+import Button from "../buttons/button";
 
 export default function Home() {
   return (
@@ -23,7 +24,8 @@ export default function Home() {
         </div>
         <div className={`${styles.aboutDetails} pt-4`}>
           <h3 className={`my-8`}>About Me</h3>
-          <p className={`${styles.aboutText}`}> {aboutMeDetail}</p>
+          <p className={`${styles.aboutText} mb-4`}> {aboutMeDetail}</p>
+          <Button text="GO TO PORTFOLIO" link={"/portfolio"} />
         </div>
       </section>
     </main>

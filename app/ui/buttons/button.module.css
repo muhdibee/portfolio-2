@@ -1,0 +1,11 @@
+.container {
+  width: 12.5rem;
+  height: 3rem;
+  border: 1px solid var(--darkBlue);
+}
+
+.container:hover {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  cursor: pointer;
+}
