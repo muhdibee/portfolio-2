@@ -8,17 +8,23 @@ export default function Navbar() {
     <div className={styles.container}>
       <div className={styles.logo}>
         {" "}
-        <Image src={logo} alt="logo" height={30} width={30} />
+        <Image src={logo} alt="logo" className={`${styles.logo} logo`} />
       </div>
       <ul className={styles.links}>
         <li>
-          <Link href={"/"}>HOME</Link>
+          <Link href={"/"}>
+            <p className={`navLink`}>HOME</p>
+          </Link>
         </li>
         <li>
-          <Link href={"/portfolio"}>PORTFOLIO</Link>
+          <Link href={"/portfolio"}>
+            <p className={`navLink`}>PORTFOLIO</p>
+          </Link>
         </li>
         <li>
-          <Link href={"/contact-me"}>CONTACT ME</Link>
+          <Link href={"/contact-me"}>
+            <p className={`navLink`}>CONTACT ME</p>
+          </Link>
         </li>
       </ul>
     </div>

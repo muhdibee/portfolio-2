@@ -22,7 +22,7 @@ export default function Footer() {
         className={`${styles.nav} flex flex-row justify-between items-center pt-3 pb-3`}>
         <div className="flex flex-row justify-between gap-6">
           <div>
-            <Image src={logo} alt="logo" height={40} width={40} />
+            <Image src={logo} alt="logo" />
           </div>
           <ul className={`${styles.links} flex flex-row justify-between gap-6`}>
             <li>

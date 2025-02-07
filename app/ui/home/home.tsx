@@ -1,17 +1,31 @@
+import Image from "next/image";
+import { aboutMeDetail, heroSummary } from "@/app/util";
+import myPhoto from "../../../public/images/me2.jpg";
 import styles from "./home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <div className={`${styles.hero} w-full`}>
-        <div className={styles.about}>
-          Hey, I’m Muhammad Ibrahim and I love building awesome software
+    <main className={styles.container}>
+      <section className={`${styles.sectionHero} w-full flex items-end`}>
+        <div
+          className={`${styles.heroAbout} flex flex-col items-start justify-between`}>
+          <h1 className={`text-5xl py-[3rem]`}>{heroSummary}</h1>
+          <button className="aboutBtn">ABOUT ME</button>
         </div>
-      </div>
-      <div>
-        <div className={styles.aboutImage}></div>
-        <div className={styles.aboutText}></div>
-      </div>
-    </div>
+      </section>
+      <section className={`${styles.sectionAbout} w-full flex flex-row my-10`}>
+        <div className={`${styles.aboutImageContainer}`}>
+          <Image
+            className={styles.aboutImageItem}
+            alt="photo of Muhammad"
+            src={myPhoto}
+          />
+        </div>
+        <div className={`${styles.aboutDetails} pt-4`}>
+          <h3 className={`my-8`}>About Me</h3>
+          <p className={`${styles.aboutText}`}> {aboutMeDetail}</p>
+        </div>
+      </section>
+    </main>
   );
 }

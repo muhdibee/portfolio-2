@@ -1,7 +1,12 @@
 import Navbar from "./ui/navbar/navbar";
 import Footer from "./ui/footer/footer";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Ibarra_Real_Nova,
+  Public_Sans,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,6 +17,19 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// My fonts
+const ibarra_real_nova = Ibarra_Real_Nova({
+  weight: "700",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const public_sans = Public_Sans({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        className={`${geistSans.variable} ${geistMono.variable} ${ibarra_real_nova.className} ${public_sans.className} antialiased`}>
         <Navbar />
         {children}
         <Footer />
