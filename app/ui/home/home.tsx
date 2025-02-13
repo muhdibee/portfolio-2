@@ -3,6 +3,7 @@ import { aboutMeDetail, heroSummary } from "@/app/util";
 import myPhoto from "../../../public/images/me2.jpg";
 import styles from "./home.module.css";
 import Button from "../buttons/button";
+import FilledButton from "../buttons/filledButton";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <div
           className={`${styles.heroAbout} flex flex-col items-start justify-between`}>
           <h1 className={`text-5xl py-[3rem]`}>{heroSummary}</h1>
-          <button className="aboutBtn">ABOUT ME</button>
+          <FilledButton text="ABOUT ME" link={"/about-me"} />
         </div>
       </section>
       <section className={`${styles.sectionAbout} w-full flex flex-row my-10`}>

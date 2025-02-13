@@ -1,4 +1,6 @@
-import styles from "@/app/ui/navbar/navbar.module.css";
+import styles from "@/app/ui/buttons/filledButton.module.css";
+import downward_arrow from "../../../public/downward_symbol.png";
+import Image from "next/image";
 import Link from "next/link";
 import { UrlObject } from "url";
 
@@ -9,8 +11,13 @@ interface NavbarProps {
 
 export default function FilledButton({ text, link = "#" }: NavbarProps) {
   return (
-    <Link href={link}>
-      <button className={styles.container}>{text}</button>
-    </Link>
+    <div className={`${styles.container} pe-8`}>
+      <Link href={link} className={`flex justify-between`}>
+        <span>
+          <Image src={downward_arrow} alt="arrow symbol" />
+        </span>
+        <button>{text}</button>
+      </Link>
+    </div>
   );
 }
