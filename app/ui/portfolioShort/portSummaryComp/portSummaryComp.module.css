@@ -1,5 +1,22 @@
 .PortfolioShortCompContainer {
   width: 63.4375rem;
   height: 31.25rem;
-  border: 1px solid rgb(175, 175, 175);
+  gap: 3rem;
+  /* gap: 2.812rem; */
+  /* border: 1px solid rgb(175, 175, 175); */
+}
+
+.portfolioImageContainer {
+  height: 100%;
+  width: 33.75rem;
+  /* border: 1px solid rgb(44, 209, 72); */
+}
+.portfolioImage {
+  object-fit: contain;
+}
+.description {
+  width: 21.875rem;
+  width: 19.875rem;
+  border-top: 1px solid var(--lightGrey);
+  border-bottom: 1px solid var(--lightGrey);
 }

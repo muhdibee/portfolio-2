@@ -1,12 +1,14 @@
-import {} from "@/app/util";
 import styles from "./portfolioShort.module.css";
+import { portfolios } from "../../util/index";
 import PortfolioShortComp from "./portSummaryComp/portSummaryComp";
 
 export default function PortfolioShort() {
   return (
     <section
       className={`${styles.PortfolioShortContainer} w-full flex justify-center items-center`}>
-      <PortfolioShortComp />
+      {portfolios.map((portfolio, index) => (
+        <PortfolioShortComp key={index} portfolio={portfolio} />
+      ))}
     </section>
   );
 }
