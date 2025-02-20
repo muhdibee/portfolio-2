@@ -12,11 +12,77 @@ import image from "../../public/images/manage/image-portfolio-manage@2x.jpg";
 export const portfolios = [
     {
         "id": 1,
-        name: 'countris',
+        name: 'Countris',
         shortDescription: `This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.`,
         background: `This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.`,
         staticPreviews: [image],
         link: '/portfolio/countris',
+        liveLink: 'https://countries-summary.vercel.app/',
+        skills: ["Interaction Design", "Front End Development"],
+        technologies: ["HTML", "CSS", "JS"]
+    },
+    {
+        "id": 2,
+        name: 'IP address tracker',
+        shortDescription: `This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.`,
+        background: `This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.`,
+        staticPreviews: [image],
+        link: '/portfolio/ip-address-tracker',
+        liveLink: 'https://countries-summary.vercel.app/',
+        skills: ["Interaction Design", "Front End Development"],
+        technologies: ["HTML", "CSS", "JS"]
+    },
+    {
+        "id": 3,
+        name: 'Manage',
+        shortDescription: `This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.`,
+        background: `This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.`,
+        staticPreviews: [image],
+        link: '/portfolio/countris',
+        liveLink: 'https://countries-summary.vercel.app/',
+        skills: ["Interaction Design", "Front End Development"],
+        technologies: ["HTML", "CSS", "JS"]
+    },
+    {
+        "id": 4,
+        name: 'Bookmark',
+        shortDescription: `This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.`,
+        background: `This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.`,
+        staticPreviews: [image],
+        link: '/portfolio/bookmark',
+        liveLink: 'https://countries-summary.vercel.app/',
+        skills: ["Interaction Design", "Front End Development"],
+        technologies: ["HTML", "CSS", "JS"]
+    },
+    {
+        "id": 5,
+        name: 'Fylo',
+        shortDescription: `This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.`,
+        background: `This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.`,
+        staticPreviews: [image],
+        link: '/portfolio/fylo',
+        liveLink: 'https://countries-summary.vercel.app/',
+        skills: ["Interaction Design", "Front End Development"],
+        technologies: ["HTML", "CSS", "JS"]
+    },
+    {
+        "id": 6,
+        name: 'Insure',
+        shortDescription: `This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.`,
+        background: `This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.`,
+        staticPreviews: [image],
+        link: '/portfolio/insure',
+        liveLink: 'https://countries-summary.vercel.app/',
+        skills: ["Interaction Design", "Front End Development"],
+        technologies: ["HTML", "CSS", "JS"]
+    },
+    {
+        "id": 7,
+        name: 'First portfolio',
+        shortDescription: `This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.`,
+        background: `This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.`,
+        staticPreviews: [image],
+        link: '/portfolio/first-portfolio',
         liveLink: 'https://countries-summary.vercel.app/',
         skills: ["Interaction Design", "Front End Development"],
         technologies: ["HTML", "CSS", "JS"]
