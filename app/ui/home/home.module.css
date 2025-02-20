@@ -8,7 +8,7 @@
 }
 
 .sectionHero {
-  background-image: url("../../../public/images/homepage/desktop/image-homepage-hero.jpg");
+  background-image: url("../../../public/images/hero/image-homepage-hero.jpg");
   background-size: auto;
   background-position: center;
   height: 37.5rem;
@@ -33,7 +33,6 @@
 .sectionAbout .aboutImageContainer {
   height: 100%;
   width: 50%;
-  /* border: 1px solid rgb(175, 175, 175); */
   overflow: hidden;
 }
 .aboutImageContainer .aboutImageItem {
