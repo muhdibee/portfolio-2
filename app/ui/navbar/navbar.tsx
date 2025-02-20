@@ -10,43 +10,45 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className={styles.container}>
-      <div className={styles.logo}>
-        {" "}
-        <Image src={logo} alt="logo" className={`${styles.logo} logo`} />
+    <div className={styles.navContainer}>
+      <div className={styles.nav}>
+        <div className={styles.logo}>
+          {" "}
+          <Image src={logo} alt="logo" className={`${styles.logo} logo`} />
+        </div>
+        <ul className="links">
+          <li>
+            <Link href={"/"}>
+              <p
+                className={clsx(` navLink`, {
+                  ["activeLink"]: "/" === pathname,
+                })}>
+                HOME
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link href={"/portfolio"}>
+              <p
+                className={clsx(` navLink`, {
+                  ["activeLink"]: "/portfolio" === pathname,
+                })}>
+                PORTFOLIO
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link href={"/contact-me"}>
+              <p
+                className={clsx(` navLink`, {
+                  ["activeLink"]: "/contact-me" === pathname,
+                })}>
+                CONTACT ME
+              </p>
+            </Link>
+          </li>
+        </ul>
       </div>
-      <ul className="links">
-        <li>
-          <Link href={"/"}>
-            <p
-              className={clsx(` navLink`, {
-                ["activeLink"]: "/" === pathname,
-              })}>
-              HOME
-            </p>
-          </Link>
-        </li>
-        <li>
-          <Link href={"/portfolio"}>
-            <p
-              className={clsx(` navLink`, {
-                ["activeLink"]: "/portfolio" === pathname,
-              })}>
-              PORTFOLIO
-            </p>
-          </Link>
-        </li>
-        <li>
-          <Link href={"/contact-me"}>
-            <p
-              className={clsx(` navLink`, {
-                ["activeLink"]: "/contact-me" === pathname,
-              })}>
-              CONTACT ME
-            </p>
-          </Link>
-        </li>
-      </ul>
     </div>
   );
 }

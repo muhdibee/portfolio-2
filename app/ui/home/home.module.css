@@ -1,10 +1,16 @@
-.container {
-  padding: 2px 10.25rem;
+.homeContainer {
+  padding: 2px 0.5rem;
   position: relative;
+}
+
+.home {
+  width: 63.4375rem;
 }
 
 .sectionHero {
   background-image: url("../../../public/images/homepage/desktop/image-homepage-hero.jpg");
+  background-size: auto;
+  background-position: center;
   height: 37.5rem;
 }
 .heroAbout {
