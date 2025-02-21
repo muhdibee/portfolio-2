@@ -3,7 +3,6 @@ import Image, { StaticImageData } from "next/image";
 import styles from "./portSummaryComp.module.css";
 import Button from "../../buttons/button";
 import { capitalizeFirstLetter } from "@/app/util";
-// import myImage from "../../../../public/images/manage/image-portfolio-manage@2x.jpg";
 
 export interface PortfolioShortProp {
   id: number;
