@@ -1,6 +1,7 @@
 import styles from "./portfolioShort.module.css";
 import { portfolios } from "../../util/index";
 import PortfolioShortComp from "./portSummaryComp/portSummaryComp";
+import InterestComponent from "../intrestComp/interestComp";
 
 export default function PortfolioShort() {
   return (
@@ -9,6 +10,7 @@ export default function PortfolioShort() {
       {portfolios.map((portfolio, index) => (
         <PortfolioShortComp key={index} portfolio={portfolio} />
       ))}
+      <InterestComponent />
     </section>
   );
 }

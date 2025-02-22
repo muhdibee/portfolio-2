@@ -4,12 +4,13 @@ import myPhoto from "../../../public/images/me2.jpg";
 import styles from "./home.module.css";
 import Button from "../buttons/button";
 import FilledButton from "../buttons/filledButton";
+import InterestComponent from "../intrestComp/interestComp";
 
 export default function Home() {
   return (
     <main
-      className={`${styles.homeContainer} w-full flex items-center justify-center`}>
-      <div
+      className={`${styles.homeContainer} w-full flex flex-col items-center justify-center`}>
+      <section
         className={`${styles.home} flex items-center justify-center flex-col`}>
         <section className={`${styles.sectionHero} w-full flex items-end`}>
           <div
@@ -32,7 +33,8 @@ export default function Home() {
             <Button text="GO TO PORTFOLIO" link={"/portfolio"} />
           </div>
         </section>
-      </div>
+      </section>
+      <InterestComponent />
     </main>
   );
 }

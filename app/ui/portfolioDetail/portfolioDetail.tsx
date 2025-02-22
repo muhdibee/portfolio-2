@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { portfolios } from "@/app/util";
 import styles from "./portfolioDetail.module.css";
 import NotFoundPage from "../notFoundPage";
+import InterestComponent from "../intrestComp/interestComp";
 
 export default function PortfolioDetail() {
   const pathname = usePathname();
@@ -17,6 +18,7 @@ export default function PortfolioDetail() {
   return (
     <section className={styles.portfolioDetailContainer}>
       <p> Portfolio detail for {project[0].name} </p>
+      <InterestComponent />
     </section>
   );
 }

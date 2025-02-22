@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import styles from "@/app/ui/footer/footer.module.css";
 import logo from "../../../public/logo2.png";
-import Button from "../buttons/button";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -16,16 +15,6 @@ export default function Footer() {
   return (
     <footer
       className={`${styles.container} w-full flex flex-col justify-between items-center`}>
-      <section
-        className={`${styles.main} flex flex-row justify-between items-center`}>
-        <h3>
-          Interested in doing <br /> a project together?
-        </h3>
-        <div className={`${styles.hr} font-bold`}>
-          <hr />
-        </div>
-        <Button text="CONTACT ME" link={"/contact-me"} />
-      </section>
       <section
         className={`${styles.navContainer} w-full flex justify-center items-center`}>
         <div

@@ -3,15 +3,6 @@
   bottom: 0px;
   /* border: 1px solid rgb(175, 175, 175); */
 }
-.main {
-  padding: 2px 0.5rem;
-  padding-bottom: 5rem;
-  width: 63.4375rem;
-}
-.hr {
-  width: 40%;
-  font-weight: bold;
-}
 .navContainer {
   height: 5rem;
   padding: 2px 1rem;
