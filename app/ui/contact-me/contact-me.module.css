@@ -1,0 +1,52 @@
+.ContactMeContainer {
+  height: fit-content;
+}
+
+.getInTouchContainer,
+.contactContainer {
+  width: 63.4375rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--lightGrey);
+}
+
+.getInTouchText {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 39.6875rem;
+}
+.contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 39.6875rem;
+}
+
+.contactForm form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.contactForm form label {
+  width: 100%;
+}
+
+.contactForm form label input,
+.contactForm form label textarea {
+  height: 3rem;
+  width: 100%;
+  background-color: var(--lightGrey);
+  padding-left: 1rem;
+}
+
+.contactForm form label textarea {
+  height: 6rem;
+  padding-top: 1rem;
+}

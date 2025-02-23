@@ -11,7 +11,7 @@ interface NavbarProps {
 
 export default function FilledButton({ text, link = "#" }: NavbarProps) {
   return (
-    <div className={`${styles.container} pe-8`}>
+    <div className={`${styles.container} pe-6`}>
       <Link href={link} className={`flex justify-between`}>
         <span>
           <Image src={downward_arrow} alt="arrow symbol" />
