@@ -13,16 +13,3 @@
   height: 100%;
   width: 63.4375rem;
 }
-
-.socials {
-  font-size: 22px;
-  cursor: pointer;
-}
-
-.socials .github:hover,
-.socials .x:hover {
-  color: var(--black);
-}
-.socials .linkedIn:hover {
-  color: var(--linkedInBlue);
-}

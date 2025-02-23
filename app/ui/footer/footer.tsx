@@ -1,13 +1,11 @@
 "use client";
-import { FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import styles from "@/app/ui/footer/footer.module.css";
 import logo from "../../../public/logo2.png";
+import Socials from "./socials/socials";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -56,27 +54,8 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className={`${styles.socials} flex flex-row gap-6`}>
-            <Link
-              href={"https://github.com/muhdibee"}
-              target="_blank"
-              title="github/@muhdibee">
-              <FaGithub className={`${styles.github}`} />
-            </Link>
-            <Link
-              href={"https://x.com/muhdibee"}
-              target="_blank"
-              title="X/@muhdibee">
-              <FaXTwitter className={`${styles.x}`} />
-            </Link>
-            <Link
-              href={"https://www.linkedin.com/in/muhdibee/"}
-              target="_blank"
-              title="LinkedIn/@muhdibee">
-              <FaLinkedin className={`${styles.linkedIn}`} />
-            </Link>
-          </div>
         </div>
+        <Socials />
       </section>
     </footer>
   );

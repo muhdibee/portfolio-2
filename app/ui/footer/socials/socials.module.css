@@ -1,0 +1,12 @@
+.socials {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.socials .github:hover,
+.socials .x:hover {
+  color: var(--black);
+}
+.socials .linkedIn:hover {
+  color: var(--linkedInBlue);
+}

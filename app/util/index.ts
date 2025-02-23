@@ -6,6 +6,13 @@ export function capitalizeFirstLetter(word: string) {
 
 export const aboutMeDetail: string = "I’m a full-stack software engineer passionate about building scalable and efficient web applications.  I work with modern front-end frameworks like React and Next.js and back-end technologies like Node.js, Express.js and Nest.js. to build robust APIs and services. I’m adaptable to different tech stacks. I thrive in collaborative environments, whether on-site or remote. When I’m not coding, I enjoy exploring new tech trends, problem-solving, or spending time outdoors. Feel free to check out my work!";
 
+export const getInTouchText = `I’d love to hear about what you’re working on and how I could help. I’m currently 
+  looking for a new role and am open to a wide range of opportunities. My preference 
+  would be to find a position in a company in London. But I’m also happy to hear about 
+  opportunities that don’t fit that description. I’m a hard-working and positive person 
+  who will always approach each task with a sense of purpose and attention to detail. 
+  Please do feel free to check out my online profiles below and get in touch using the form.`
+
 export const heroSummary: string = " Hey, I’m Muhammad Ibrahim and I love building awesome software";
 
 import image from "../../public/images/manage/image-portfolio-manage@2x.jpg";

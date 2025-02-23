@@ -1,12 +1,18 @@
-import InterestComponent from "../intrestComp/interestComp";
 import styles from "./contact-me.module.css";
+import { getInTouchText } from "@/app/util";
 
 export default function ContactMe() {
   return (
     <section
-      className={`${styles.ContactMeContainer} w-full flex flex-col justify-center items-center`}>
-      <p>contact me comp</p>
-      <InterestComponent />
+      className={`${styles.ContactMeContainer} flex justify-center items-center`}>
+      <section>
+        <h1>Get in Touch</h1>
+        <div>
+          <p>{getInTouchText}</p>
+          <div></div>
+        </div>
+      </section>
+      <section></section>
     </section>
   );
 }
