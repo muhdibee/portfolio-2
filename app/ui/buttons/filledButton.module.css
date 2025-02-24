@@ -4,6 +4,9 @@
   background-color: var(--darkBlue);
   color: var(--white);
 }
+.container {
+  gap: 2rem;
+}
 
 .container:hover {
   background-color: var(--slightlyDesaturatedCyan);

@@ -16,7 +16,7 @@ export default function Home() {
           <div
             className={`${styles.heroAbout} flex flex-col items-start justify-between`}>
             <h1 className={`text-5xl py-[3rem]`}>{heroSummary}</h1>
-            <FilledButton text="ABOUT ME" link={"#about-me"} />
+            <FilledButton text="ABOUT ME" link={"#about-me"} icon />
           </div>
         </section>
         <section className={`${styles.sectionAbout} w-full flex flex-row`}>

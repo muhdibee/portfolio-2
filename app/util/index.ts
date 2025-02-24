@@ -75,8 +75,8 @@ export const portfolios = [
         staticPreviews: [bookmark, bookmarkHero, bookmarkPrev1, bookmarkPrev2],
         link: '/portfolio/bookmark',
         liveLink: 'https://world-ip-tracker.netlify.app/',
-        skills: ["Interaction Design", "Front End Development"],
-        technologies: ["HTML", "CSS", "JS"]
+        skills: ["Interaction Design", "/", "Front End Development"],
+        technologies: ["HTML", "/", "CSS", "/", "JS"]
     },
     {
         "id": 3,
@@ -86,8 +86,8 @@ export const portfolios = [
         staticPreviews: [insure, insureHero, insurePrev1, insurePrev2],
         link: '/portfolio/insure',
         liveLink: 'https://countries-summary.vercel.app/',
-        skills: ["Interaction Design", "Front End Development"],
-        technologies: ["HTML", "CSS", "JS"]
+        skills: ["Interaction Design", "/", "Front End Development"],
+        technologies: ["HTML", "/", "CSS", "/", "JS"]
     },
     {
         "id": 4,
@@ -97,8 +97,8 @@ export const portfolios = [
         staticPreviews: [fylo, fyloHero, fyloPrev1, fyloPrev2],
         link: '/portfolio/fylo',
         liveLink: 'https://countries-summary.vercel.app/',
-        skills: ["Interaction Design", "Front End Development"],
-        technologies: ["HTML", "CSS", "JS", "React"]
+        skills: ["Interaction Design", "/", "Front End Development"],
+        technologies: ["HTML", "/", "CSS", "/", "JS"]
     },
     // {
     //     "id": 2,

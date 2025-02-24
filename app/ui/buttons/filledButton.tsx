@@ -7,15 +7,24 @@ import { UrlObject } from "url";
 interface NavbarProps {
   text: string;
   link?: string | UrlObject;
+  icon?: boolean;
 }
 
-export default function FilledButton({ text, link = "#" }: NavbarProps) {
+export default function FilledButton({
+  text,
+  icon = false,
+  link = "#",
+}: NavbarProps) {
   return (
-    <div className={`${styles.container} pe-6`}>
-      <Link href={link} className={`flex justify-between`}>
-        <span>
-          <Image src={downward_arrow} alt="arrow symbol" />
-        </span>
+    <div className={`${styles.container} flex items-center justify-center`}>
+      <Link href={link} className={`flex items-center justify-start gap-6`}>
+        {icon ? (
+          <span className=" flex justify-self-start">
+            <Image src={downward_arrow} alt="arrow symbol" />
+          </span>
+        ) : (
+          ""
+        )}
         <button>{text}</button>
       </Link>
     </div>
