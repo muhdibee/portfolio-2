@@ -16,7 +16,7 @@ export default function Home() {
           <div
             className={`${styles.heroAbout} flex flex-col items-start justify-between`}>
             <h1 className={`text-5xl py-[3rem]`}>{heroSummary}</h1>
-            <FilledButton text="ABOUT ME" link={"/about-me"} />
+            <FilledButton text="ABOUT ME" link={"#about-me"} />
           </div>
         </section>
         <section className={`${styles.sectionAbout} w-full flex flex-row`}>
@@ -27,7 +27,7 @@ export default function Home() {
               src={myPhoto}
             />
           </div>
-          <div className={`${styles.aboutDetails} pt-4`}>
+          <div id="about-me" className={`${styles.aboutDetails} pt-4`}>
             <h3 className={`my-8`}>About Me</h3>
             <p className={`${styles.aboutText} mb-8`}> {aboutMeDetail}</p>
             <Button text="GO TO PORTFOLIO" link={"/portfolio"} />

@@ -14,7 +14,9 @@ export default function Navbar() {
       <div className={styles.nav}>
         <div className={styles.logo}>
           {" "}
-          <Image src={logo} alt="logo" className={`${styles.logo} logo`} />
+          <Link href={"/"}>
+            <Image src={logo} alt="logo" className={`${styles.logo} logo`} />
+          </Link>
         </div>
         <ul className="links">
           <li>

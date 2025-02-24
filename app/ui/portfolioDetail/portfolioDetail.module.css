@@ -1,3 +1,26 @@
 .portfolioDetailContainer {
   margin-bottom: 0rem;
 }
+.heroContainer {
+  width: 63.4375rem;
+  height: 31.25rem;
+  margin-bottom: 7.1875rem;
+}
+
+.detailsContainer {
+  width: 63.4375rem;
+}
+
+.projectShortDesc {
+  border-top: 1px solid var(--lightGrey);
+  width: 21.875rem;
+  padding-top: 3rem;
+}
+.projectShortDesc div {
+  color: var(--slightlyDesaturatedCyan);
+  font-weight: bold;
+}
+.projectInfoContainer {
+  width: 39rem;
+  margin-bottom: 4rem;
+}

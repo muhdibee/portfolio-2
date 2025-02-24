@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 
 // My fonts
 const ibarra_real_nova = Ibarra_Real_Nova({
-  weight: "700",
+  weight: ["400", "700"],
   subsets: ["latin"],
   display: "swap",
 });

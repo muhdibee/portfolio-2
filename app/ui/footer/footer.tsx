@@ -19,7 +19,9 @@ export default function Footer() {
           className={`${styles.nav} flex flex-row justify-between items-center pt-3 pb-3`}>
           <div className="flex flex-row justify-between gap-6">
             <div className="mr-12">
-              <Image src={logo} alt="logo" />
+              <Link href={"/"}>
+                <Image src={logo} alt="logo" />
+              </Link>
             </div>
             <ul className="links">
               <li>
@@ -54,8 +56,8 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          <Socials />
         </div>
-        <Socials />
       </section>
     </footer>
   );
