@@ -7,16 +7,14 @@ export default function ContactMe() {
   return (
     <section
       className={`${styles.ContactMeContainer}w-full flex flex-col justify-center items-center`}>
-      <section
-        className={`${styles.getInTouchContainer} flex flex-row  justify-between`}>
+      <section className={`${styles.getInTouchContainer} flex justify-between`}>
         <h1>Get in Touch</h1>
         <div className={styles.getInTouchText}>
           <p>{getInTouchText}</p>
           <Socials />
         </div>
       </section>
-      <section
-        className={`${styles.contactContainer} flex flex-row justify-between`}>
+      <section className={`${styles.contactContainer} flex justify-between`}>
         <h1>Contact Me</h1>
         <div className={styles.contactForm}>
           <form action="">

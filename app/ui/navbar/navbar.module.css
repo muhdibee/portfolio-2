@@ -6,6 +6,7 @@
   margin: 4rem 0rem;
   top: 0px;
   height: 2rem;
+  /* border: 1px solid red; */
 }
 
 .nav {
@@ -13,7 +14,8 @@
   align-items: center;
   justify-content: space-between;
   width: 63.4375rem;
-  min-width: 35rem;
+  gap: 8rem;
+  /* min-width: 35rem; */
 }
 
 .navButton {
