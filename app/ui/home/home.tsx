@@ -3,23 +3,24 @@ import { aboutMeDetail, heroSummary } from "@/app/util";
 import myPhoto from "../../../public/images/me2.jpg";
 import styles from "./home.module.css";
 import Button from "../buttons/button";
-import FilledButton from "../buttons/filledButton";
+// import FilledButton from "../buttons/filledButton";
 import InterestComponent from "../intrestComp/interestComp";
 
 export default function Home() {
   return (
     <main
-      className={`${styles.homeContainer} w-full flex flex-col items-center justify-center`}>
+      className={`${styles.homeContainer} w-auto flex flex-col items-center justify-center`}>
       <section
         className={`${styles.home} flex items-center justify-center flex-col`}>
         <section className={`${styles.sectionHero} w-full flex items-end`}>
-          <div
-            className={`${styles.heroAbout} flex flex-col items-start justify-between`}>
+          {/* <div
+            className={`${styles.heroAbout} flex flex-col items-start justify-between md:shrink-0`}>
             <h1 className={`text-5xl py-[3rem]`}>{heroSummary}</h1>
             <FilledButton text="ABOUT ME" link={"#about-me"} icon />
-          </div>
+          </div> */}
         </section>
-        <section className={`${styles.sectionAbout} w-full flex flex-row`}>
+        <section
+          className={`${styles.sectionAbout} md:w-full md:flex flex-row`}>
           <div className={`${styles.aboutImageContainer}`}>
             <Image
               className={styles.aboutImageItem}
@@ -34,7 +35,7 @@ export default function Home() {
           </div>
         </section>
       </section>
-      <InterestComponent />
+      {/* <InterestComponent /> */}
     </main>
   );
 }

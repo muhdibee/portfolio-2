@@ -1,7 +1,8 @@
 .main {
   padding: 2px 0.5rem;
   padding-bottom: 5rem;
-  width: 63.4375rem;
+  width: 100%;
+  border: 1px solid green;
 }
 .hr {
   width: 40%;
