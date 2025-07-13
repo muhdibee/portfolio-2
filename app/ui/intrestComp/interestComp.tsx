@@ -3,7 +3,8 @@ import styles from "./interestComp.module.css";
 
 export default function InterestComponent() {
   return (
-    <section className={`${styles.container} flex items-center justify-center`}>
+    <section
+      className={`${styles.container} w-full flex items-center justify-center`}>
       <div className={`${styles.main}`}>
         <h2>
           <b>
