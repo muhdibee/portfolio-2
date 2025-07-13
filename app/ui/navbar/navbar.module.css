@@ -28,12 +28,16 @@
   display: none;
 }
 
-/* .largeScreenLinks {
-  display: block;
-} */
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 2rem;
+  background-color: red;
+}
 
 /* Small screens */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .largeScreenLinks {
     display: none;
   }

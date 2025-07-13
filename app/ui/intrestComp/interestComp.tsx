@@ -3,15 +3,18 @@ import styles from "./interestComp.module.css";
 
 export default function InterestComponent() {
   return (
-    <section
-      className={`${styles.main} flex flex-row justify-between items-center`}>
-      <h3>
-        Interested in doing <br /> a project together?
-      </h3>
-      <div className={`${styles.hr} font-bold`}>
-        <hr />
+    <section className={`${styles.container} flex items-center justify-center`}>
+      <div className={`${styles.main}`}>
+        <h2>
+          <b>
+            Looking to hire <br /> an engineer?
+          </b>
+        </h2>
+        <div className={`${styles.hr} font-bold border-2 border-solid p-2`}>
+          <hr />
+        </div>
+        <Button text="CONTACT ME" link={"/contact-me"} />
       </div>
-      <Button text="CONTACT ME" link={"/contact-me"} />
     </section>
   );
 }

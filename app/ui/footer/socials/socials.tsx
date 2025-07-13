@@ -6,7 +6,7 @@ import styles from "./socials.module.css";
 
 export default function Socials() {
   return (
-    <div className={`${styles.socials} flex`}>
+    <div className={`${styles.socials} flex gap-6`}>
       <Link
         href={"https://github.com/muhdibee"}
         target="_blank"

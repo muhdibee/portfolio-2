@@ -23,7 +23,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className={styles.largeScreenLinks}>
-          <ul className="links">
+          <ul className="navLinks">
             <li>
               <Link href={"/"}>
                 <p

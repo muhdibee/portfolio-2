@@ -1,10 +1,28 @@
-.main {
-  padding: 2px 0.5rem;
-  padding-bottom: 5rem;
+.container {
   width: 100%;
-  border: 1px solid green;
 }
+.main {
+  max-width: 63.4375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 0.5rem;
+  width: 100%;
+}
+
 .hr {
   width: 40%;
   font-weight: bold;
+}
+
+/* Small screens */
+@media screen and (max-width: 640px) {
+  .main {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .hr {
+    display: none;
+  }
 }
