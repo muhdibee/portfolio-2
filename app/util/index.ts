@@ -13,7 +13,7 @@ export const getInTouchText = `I’d love to hear about what you’re working on
   who will always approach each task with a sense of purpose and attention to detail. 
   Please do feel free to check out my online profiles below and get in touch using the form.`
 
-export const heroSummary: string = " Hey, I’m Muhammad Ibrahim and I love building awesome software";
+export const heroSummary: string = " Hey, I’m Muhammad Ibrahim, I'm a passionate software engineer";
 
 
 // Manage images
